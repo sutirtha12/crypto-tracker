@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Search from './pages/Search'
 import Home from './pages/Home'
 import List from './pages/List'
 import Navbar from './components/Navbar'
@@ -19,6 +18,7 @@ const App = () => {
       <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/login' />
       
       <Route path='/coinlist' element={<List/>}/>
        <Route path="/coin/:coinId" element={<CoinDetail />} />
